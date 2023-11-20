@@ -40,4 +40,4 @@ There are five functions in this Package. This section of the tutorial will go t
 ##Mutate grams to kilograms
 ##Linear Model
 ##Scatter Plot 
-## Min, Max, Mean
+##Min, Max, Mean
