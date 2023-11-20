@@ -19,13 +19,13 @@ devtools::install_github("CR4WDAD/kelley_pkg")
 library(tidyverse)
 library(ggplot2)
 ```
-# First Function: Clean data 
+# First Function TLDR: Clean data 
 This function removes all NA's from a data set.
-# Second Function: Mutate data
+# Second Function TLDR: Mutate data
 This function converts your weight column from grams to kilograms.
-# Third Function: Linear Model
+# Third Function TLDR: Linear Model
 This function creates a summary of a linear model.
-# Fourth Function: Plot data
+# Fourth Function TLDR: Plot data
 This function creates a scatter plot.
-# Fifth Function: Min, Max, Mean
+# Fifth Function TLDR: Min, Max, Mean
 This function creates a summary of the mean, min, and max of a numerical column.
