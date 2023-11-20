@@ -20,7 +20,7 @@ library(remotes)
 install.packages("googlesheets4")
 library(googlesheets4)
 
-remotes::install_github("CR4WDAD/kelley_pkg")
+remotes::install_github("CR4WDAD/kelley.pkg")
 ```
 
 #Downloading Data for Package 
