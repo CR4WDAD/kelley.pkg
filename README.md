@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # kelley.pkg
 # kelley.pkg
 The goal of kelley.pkg is to help process data with 5 functions. 
@@ -52,4 +52,4 @@ tm(data, col1, col2)
 ```
 =======
 
->>>>>>> daca814b8830e0063ac242013d1fcd4f7cd81fd1
+
