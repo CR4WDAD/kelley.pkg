@@ -1,0 +1,75 @@
+---
+title: "Package Tutorial"
+author: "Logan Kelley"
+date: "2023-11-19"
+output: html_document
+---
+
+#An Introduction to My R Package
+
+This R packages helps users process data sets in specific ways. The package has functions for removing NA's from your data set, mutating a weight column in units of grams into a column in the units of kilograms, create a summary of a linear model with a responder and predictor, create a scatter plot comparing two columns in your data frame, and creating a summary of min, max, and mean of a column in the data frame. 
+
+#Installing the R package
+
+To install this R package enter the following code into your console. 
+
+```{r, eval=False}
+install.packages("remotes")
+library(remotes)
+
+install.packages("googlesheets4")
+library(googlesheets4)
+
+remotes::install_github("CR4WDAD/kelley.pkg")
+```
+
+#Downloading Data for Package 
+
+To download the data set for this package enter the following code:
+
+```{r, eval=False, include=TRUE}
+googlesheets4::gs4_deauth()
+surveys <- read_sheet("https://docs.google.com/spreadsheets/d/1if1TIUxvCg3LtR0deHq1NgXPNOSMo0Wt4JhirsN0JBE/edit?usp=sharing")
+```
+
+#Functions in This Package and How to Use Them
+
+There are five functions in this Package. This section of the tutorial will go through how to use each one and why. 
+
+##Remove NA's
+The first function in this package is used to clean data. It removes NA's from all the columns in the data frame. The name of this function is remove_nas(). 
+Enter this code in your console:
+```{r}
+remove_nas(surveys)
+```
+If everything worked properly the data-set should be clear of all NAs
+
+##Mutate grams to kilograms
+The second function in this package is used to convert a weight column from the unit grams to the unit kilograms. The name of this function is mutation().
+Enter this code in your console:
+```{r}
+mutation(surveys, species_id, weight)
+```
+If everything worked properly the data-set should have a new column called "weight_kg" with the correct conversion
+##Linear Model
+The third function in this package is used to create a summary of a linear model to see if a predictor has an effect on the response. The name of this function is lm_function().
+Enter this code in your console: 
+```{r}
+lm_function(surveys, "weight", "hindfoot_length")
+```
+If everything worked properly you should see a linear model summary that indicates weight is in fact a predictor of hindfoot_length
+##Scatter Plot 
+The fourth function in this package is used to create a scatter plot of 2 columns in your data set. The name of this function is plot_graph().
+Enter this code in your console:
+```{r}
+plot_graph(surveys, weight, hindfoot_length)
+```
+If everything worked properly a scatter plot with weight on the x-axis and hindfoot_length on the y-axis should be generated. 
+##Min, Max, Mean
+The fifth and final function in this package is used to create a summary of the min, max, and mean of a column. The name of this function is tm().
+Enter this code in your console:
+```{r}
+tm(surveys, weight, sex)
+
+```
+If everything worked properly a summary of the minimum, maximum, and mean weight of both sexes should be displayed. 
