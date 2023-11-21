@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # kelley.pkg
 # kelley.pkg
 The goal of kelley.pkg is to help process data with 5 functions. 
@@ -49,3 +50,6 @@ This function creates a summary of the mean, min, and max of a numerical column.
 tm(data, col1, col2)
 
 ```
+=======
+
+>>>>>>> daca814b8830e0063ac242013d1fcd4f7cd81fd1

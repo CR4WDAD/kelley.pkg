@@ -1,6 +1,1 @@
-```{r}
-library(googlesheets4)
-googlesheets4::gs4_deauth()
-surveys <- read_sheet("https://docs.google.com/spreadsheets/d/1if1TIUxvCg3LtR0deHq1NgXPNOSMo0Wt4JhirsN0JBE/edit?usp=sharing")
-```
 
