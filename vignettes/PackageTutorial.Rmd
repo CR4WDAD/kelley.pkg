@@ -1,29 +1,43 @@
 ---
-title: "PackageTutorial"
+title: "Package Tutorial"
+author: "Logan Kelley"
+date: "2023-11-19"
 output: html_document
-date: "2023-11-02"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+#An Introduction to My R Package
+
+This R packages helps users process data sets in specific ways. The package has functions for removing NA's from your data set, mutating a weight column in units of grams into a column in the units of kilograms, create a summary of a linear model with a responder and predictor, create a scatter plot comparing two columns in your data frame, and creating a summary of min, max, and mean of a column in the data frame. 
+
+#Installing the R package
+
+To install this R package enter the following code into your console. 
+
+```{r, eval=False}
+install.packages("remotes")
+library(remotes)
+
+install.packages("googlesheets4")
+library(googlesheets4)
+
+remotes::install_github("CR4WDAD/kelley.pkg")
 ```
 
-## R Markdown
+#Downloading Data for Package 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+To download the data set for this package enter the following code:
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r, eval=False, include=TRUE}
+googlesheets4::gs4_deauth()
+surveys <- read_sheet("https://docs.google.com/spreadsheets/d/1if1TIUxvCg3LtR0deHq1NgXPNOSMo0Wt4JhirsN0JBE/edit?usp=sharing")
 ```
 
-## Including Plots
+#Functions in This Package and How to Use Them
 
-You can also embed plots, for example:
+There are five functions in this Package. This section of the tutorial will go through how to use each one and why. 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+##Remove NA's
+##Mutate grams to kilograms
+##Linear Model
+##Scatter Plot 
+##Min, Max, Mean
