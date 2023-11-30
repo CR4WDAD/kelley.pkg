@@ -13,13 +13,11 @@ This R packages helps users process data sets in specific ways. The package has 
 
 To install this R package enter the following code into your console. 
 
-```{r, eval=False,include = TRUE}
+```{r, eval=False}
 install.packages("remotes")
 library(remotes)
-
 install.packages("googlesheets4")
 library(googlesheets4)
-
 remotes::install_github("CR4WDAD/kelley.pkg")
 ```
 
