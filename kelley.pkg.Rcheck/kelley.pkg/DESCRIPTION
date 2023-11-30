@@ -1,0 +1,23 @@
+Package: kelley.pkg
+Title: An R package for processing data
+Version: 0.1
+Authors@R: c(
+  person(given = "Logan",
+          family = "Kelley",
+          role = c("cre", "aut"),
+          email = "logan.kelley@selu.edu")
+          )
+Description: An R package to process data. Most functions accept numerical input and allow users to calculate a variety of summary statistics to understand plants in their ecosystems. Users can use this to calculate popular and widely-used stats such as whatever, this and that, and some other stuff.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: tidyverse, broom
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+NeedsCompilation: no
+Packaged: 2023-11-20 18:19:52 UTC; r2164272
+Author: Logan Kelley [cre, aut]
+Maintainer: Logan Kelley <logan.kelley@selu.edu>
+Built: R 4.3.1; ; 2023-11-20 18:19:55 UTC; unix
