@@ -13,7 +13,7 @@ This R packages helps users process data sets in specific ways. The package has 
 
 To install this R package enter the following code into your console. 
 
-```{r, eval=False}
+```{r, eval=False,include = TRUE}
 install.packages("remotes")
 library(remotes)
 
